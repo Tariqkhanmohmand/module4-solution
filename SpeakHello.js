@@ -1,9 +1,9 @@
-(function(name) {
-    var helloSpeaker = {}
-    helloSpeaker.name = name
-    var speakWord = "Hello";
-    helloSpeaker.speak = function(name) {
-        console.log(speakWord + " " + name);
+const helloSpeaker = {
+    speakWord: 'Hello',
+};
+//This says Hello
+(function() {
+    helloSpeaker.speak = function(userName) {
+        return (helloSpeaker.speakWord + " " + userName);
     }
-    window.helloSpeaker = helloSpeaker
-})();
+}());
